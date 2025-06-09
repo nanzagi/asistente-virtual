@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asistente Virtual para Razón y Proporción</title>
+</head>
+<body>
+    <h1>Asistente Virtual para Profesores</h1>
+    <form method="post">
+        <label>Describe tu dificultad o pregunta:</label><br>
+        <textarea name="pregunta" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+    {% if respuesta %}
+        <h2>Recomendación del Asistente:</h2>
+        <p>{{ respuesta }}</p>
+    {% endif %}
+</body>
+</html>
